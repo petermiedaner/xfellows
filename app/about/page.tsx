@@ -89,7 +89,7 @@ export default function About() {
           position: "relative",
         }}>
           <Image
-            src="xfellows/peter.jpeg"
+            src="/peter.jpeg"
             alt="Peter Miedaner"
             fill
             style={{

@@ -1,12 +1,10 @@
-/** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+import type { NextConfig } from "next";
 
-const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/xfellows' : '',
+const nextConfig: NextConfig = {
+  output: "export",
   images: {
     unoptimized: true,
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
