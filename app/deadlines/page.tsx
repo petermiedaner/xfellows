@@ -25,7 +25,7 @@ export default function Deadlines() {
     {
       facility: "SACLA",
       location: "Hyogo, Japan",
-      nextDeadline: "November 4, 2025",
+      nextDeadline: "May 25, 2026",
       time: "10:00",
       timezone: "Asia/Tokyo",
       tzAbbr: "JST",
@@ -50,7 +50,7 @@ export default function Deadlines() {
       timezone: "Asia/Seoul",
       tzAbbr: "KST",
       color: "#8b5cf6",
-      link: "https://pal.postech.ac.kr/en/bbs/use/TYhCqnQDVrpQz3X9/selectView.do",
+      link: "https://pal.postech.ac.kr/en/intro/greeting.do",
     },
     {
       facility: "FERMI",
