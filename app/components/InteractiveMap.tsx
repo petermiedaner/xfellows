@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { getImagePath } from "@/lib/imagePath";
 
 const xfelLocations = [
   {
@@ -9,7 +10,7 @@ const xfelLocations = [
     name: "European XFEL",
     city: "Hamburg, Germany",
     description: "The largest X-ray laser in the world. 27,000 flashes per second.",
-    image: "/EuropeanXFEL.jpeg",
+    image: getImagePath("/EuropeanXFEL.jpeg"),
     top: "19.75%",
     left: "49.25%",
     color: "#ea5078",
@@ -20,7 +21,7 @@ const xfelLocations = [
     name: "LCLS",
     city: "Stanford, USA",
     description: "The world's first hard X-ray free-electron laser.",
-    image: "/lcls.jpg",
+    image: getImagePath("/lcls.jpg"),
     top: "32.5%",
     left: "7%",
     color: "#005ba5",
@@ -31,7 +32,7 @@ const xfelLocations = [
     name: "SACLA",
     city: "Hyogo, Japan",
     description: "A compact XFEL facility producing powerful X-ray pulses.",
-    image: "/sacla.jpg",
+    image: getImagePath("/sacla.jpg"),
     top: "31%",
     left: "91%",
     color: "#519d6f",
@@ -42,7 +43,7 @@ const xfelLocations = [
     name: "SwissFEL",
     city: "Villigen, Switzerland",
     description: "Compact free-electron laser at the Paul Scherrer Institute.",
-    image: "/swissfel.jpg",
+    image: getImagePath("/swissfel.jpg"),
     top: "23.5%",
     left: "51.5%",
     color: "#f59e0b",
@@ -53,7 +54,7 @@ const xfelLocations = [
     name: "PAL-XFEL",
     city: "Pohang, South Korea",
     description: "South Korea's hard X-ray free-electron laser facility.",
-    image: "/pal.jpg",
+    image: getImagePath("/pal.jpg"),
     top: "29.5%",
     left: "87%",
     color: "#8b5cf6",
@@ -64,7 +65,7 @@ const xfelLocations = [
     name: "FERMI FEL",
     city: "Trieste, Italy",
     description: "Seeded EUV to soft x-ray free-electron laser",
-    image: "/fermi.jpg",
+    image: getImagePath("/fermi.jpg"),
     top: "26%",
     left: "51.5%",
     color: "#5bb1c9",
@@ -140,7 +141,7 @@ export default function InteractiveMap() {
       }}>
         {/* Map Image */}
         <Image
-          src="/worldmap.png"
+          src={getImagePath("/worldmap.png")}
           alt="World Map"
           width={1200}
           height={600}
