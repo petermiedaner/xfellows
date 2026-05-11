@@ -1,59 +1,52 @@
 export default function Seminar() {
   // Upcoming seminar data
   const upcomingSeminar = {
-    title: "Example",
-    speaker: "Dr. Example",
-    affiliation: "some XFEL",
-    date: "sometime",
-    time: "4:00 PM CET / 10:00 AM EST",
-    zoomLink: "link",
+    title: "Emerging applications of high-repetition rate XFEL sources",
+    speaker: "Dr. Chi-Chang Kao",
+    affiliation: "SLAC",
+    date: "June 14, 2026",
+    time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
+    zoomLink: "https://mit.zoom.us/meeting/register/pbRMNeuDTsyJEPoZutEjjw",
     abstract: `XFEL science.`,
   };
 
   // Seminar schedule data
   const seminars = [
     {
-      date: "June 15, 2026",
-      speaker: "Example",
-      affiliation: "European XFEL",
-      topic: "Ultrafast Dynamics in Proteins Revealed by XFEL Serial Crystallography",
+      date: "June 14, 2026",
+      speaker: "Dr. Chi-Chang Kao",
+      affiliation: "SLAC",
+      topic: "Emerging applications of high-repetition rate XFEL sources",
       status: "upcoming",
     },
     {
-      date: "June 22, 2026",
-      speaker: "Example",
-      affiliation: "SLAC / Stanford",
-      topic: "Single Particle Imaging at LCLS-II",
+      date: "July 1, 2026",
+      speaker: "Dr. Claudio Masciovecchio",
+      affiliation: "FERMI FEL",
+      topic: "TBD",
       status: "upcoming",
     },
     {
-      date: "June 29, 2026",
-      speaker: "Example",
-      affiliation: "SACLA / RIKEN",
-      topic: "Coherent Diffractive Imaging of Nanocrystals",
+      date: "TBD",
+      speaker: "Dr. Kelly Gaffney",
+      affiliation: "LCLS",
+      topic: "TBD",
       status: "upcoming",
     },
     {
-      date: "July 6, 2026",
-      speaker: "Example",
+      date: "TBD",
+      speaker: "Dr. Laura Foglia",
       affiliation: "Elettra / FERMI",
-      topic: "Seeded FEL Spectroscopy of Quantum Materials",
+      topic: "TBD",
       status: "upcoming",
     },
-    {
-      date: "June 8, 2026",
-      speaker: "Example",
-      affiliation: "PAL-XFEL",
-      topic: "Time-Resolved XFEL Studies of Chemical Reactions",
-      status: "past",
-    },
-    {
-      date: "June 1, 2026",
-      speaker: "Example",
-      affiliation: "SwissFEL / PSI",
-      topic: "Attosecond X-ray Pulses for Electron Dynamics",
-      status: "past",
-    },
+    // {
+    //   date: "June 1, 2026",
+    //   speaker: "Example",
+    //   affiliation: "SwissFEL / PSI",
+    //   topic: "Attosecond X-ray Pulses for Electron Dynamics",
+    //   status: "past",
+    // },
   ];
 
   const upcomingSeminars = seminars.filter(s => s.status === "upcoming");
@@ -99,7 +92,7 @@ export default function Seminar() {
         color: "#ea5078",
         marginBottom: "20px",
       }}>
-        📢 Next Seminar
+        Next Seminar
       </h2>
 
       <div style={{
@@ -133,13 +126,13 @@ export default function Seminar() {
           color: "#555",
         }}>
           <p style={{ margin: 0 }}>
-            🎤 <strong>{upcomingSeminar.speaker}</strong> — {upcomingSeminar.affiliation}
+            <strong>{upcomingSeminar.speaker}</strong> — {upcomingSeminar.affiliation}
           </p>
           <p style={{ margin: 0 }}>
-            📅 {upcomingSeminar.date}
+            {upcomingSeminar.date}
           </p>
           <p style={{ margin: 0 }}>
-            🕓 {upcomingSeminar.time}
+            {upcomingSeminar.time}
           </p>
         </div>
 
@@ -160,7 +153,7 @@ export default function Seminar() {
             marginBottom: "20px",
           }}
         >
-          Join via Zoom →
+          Register →
         </a>
 
         {/* Abstract */}
