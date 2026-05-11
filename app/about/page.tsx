@@ -88,7 +88,7 @@ export default function About() {
           position: "relative",
         }}>
           <img
-            src="/xfellows/peter.jpeg"
+            src="/xfellows/peter.JPEG"
             alt="Peter Miedaner"
             style={{
               width: "100%",
