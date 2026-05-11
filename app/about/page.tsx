@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { FaEnvelope, FaGraduationCap } from "react-icons/fa";
 
 export default function About() {
@@ -88,11 +87,12 @@ export default function About() {
           overflow: "hidden",
           position: "relative",
         }}>
-          <Image
-            src="/peter.jpeg"
+          <img
+            src="/xfellows/peter.jpeg"
             alt="Peter Miedaner"
-            fill
             style={{
+              width: "100%",
+              height: "100%",
               objectFit: "cover",
             }}
           />

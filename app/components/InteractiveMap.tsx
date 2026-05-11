@@ -1,8 +1,6 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
-import { getImagePath } from "@/lib/imagePath";
 
 const xfelLocations = [
   {
@@ -10,7 +8,7 @@ const xfelLocations = [
     name: "European XFEL",
     city: "Hamburg, Germany",
     description: "The largest X-ray laser in the world. 27,000 flashes per second.",
-    image: getImagePath("/EuropeanXFEL.jpeg"),
+    image: "/xfellows/EuropeanXFEL.jpeg",
     top: "19.75%",
     left: "49.25%",
     color: "#ea5078",
@@ -21,7 +19,7 @@ const xfelLocations = [
     name: "LCLS",
     city: "Stanford, USA",
     description: "The world's first hard X-ray free-electron laser.",
-    image: getImagePath("/lcls.jpg"),
+    image: "/xfellows/lcls.jpg",
     top: "32.5%",
     left: "7%",
     color: "#005ba5",
@@ -32,7 +30,7 @@ const xfelLocations = [
     name: "SACLA",
     city: "Hyogo, Japan",
     description: "A compact XFEL facility producing powerful X-ray pulses.",
-    image: getImagePath("/sacla.jpg"),
+    image: "/xfellows/sacla.jpg",
     top: "31%",
     left: "91%",
     color: "#519d6f",
@@ -43,7 +41,7 @@ const xfelLocations = [
     name: "SwissFEL",
     city: "Villigen, Switzerland",
     description: "Compact free-electron laser at the Paul Scherrer Institute.",
-    image: getImagePath("/swissfel.jpg"),
+    image: "/xfellows/swissfel.jpg",
     top: "23.5%",
     left: "51.5%",
     color: "#f59e0b",
@@ -54,7 +52,7 @@ const xfelLocations = [
     name: "PAL-XFEL",
     city: "Pohang, South Korea",
     description: "South Korea's hard X-ray free-electron laser facility.",
-    image: getImagePath("/pal.jpg"),
+    image: "/xfellows/pal.jpg",
     top: "29.5%",
     left: "87%",
     color: "#8b5cf6",
@@ -65,7 +63,7 @@ const xfelLocations = [
     name: "FERMI FEL",
     city: "Trieste, Italy",
     description: "Seeded EUV to soft x-ray free-electron laser",
-    image: getImagePath("/fermi.jpg"),
+    image: "/xfellows/fermi.jpg",
     top: "26%",
     left: "51.5%",
     color: "#5bb1c9",
@@ -140,15 +138,13 @@ export default function InteractiveMap() {
         padding: "0 20px",
       }}>
         {/* Map Image */}
-        <Image
-          src={getImagePath("/worldmap.png")}
+        <img
+          src="/xfellows/worldmap.png"
           alt="World Map"
-          width={1200}
-          height={600}
-          priority
           style={{
             width: "100%",
             height: "auto",
+            display: "block",
           }}
         />
 
@@ -201,11 +197,12 @@ export default function InteractiveMap() {
                     height: "150px",
                     position: "relative",
                   }}>
-                    <Image
+                    <img
                       src={location.image}
                       alt={location.name}
-                      fill
                       style={{
+                        width: "100%",
+                        height: "100%",
                         objectFit: "cover",
                       }}
                     />

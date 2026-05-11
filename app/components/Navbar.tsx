@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
@@ -42,12 +41,9 @@ export default function Navbar() {
 
       {/* Logo */}
       <Link href="/">
-        <Image
-          src="/xfellas_logo.png"
+        <img
+          src="/xfellows/xfellas_logo.png"
           alt="My Logo"
-          width={225*2}
-          height={60*2}
-          priority
           style={{
             width: isMobile ? "100px" : "300px",
             height: "auto",

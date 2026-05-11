@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Footer() {
@@ -50,12 +49,10 @@ export default function Footer() {
         }}
       >
         <a href="https://example.org" target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/mit.png"
+          <img
+            src="/xfellows/mit.png"
             alt="MIT"
-            width={64}
-            height={64}
-            style={{ 
+            style={{
               width: isMobile ? "48px" : "64px",
               height: "auto",
             }}
@@ -63,12 +60,10 @@ export default function Footer() {
         </a>
 
         <a href="https://example2.org" target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/eth.png"
+          <img
+            src="/xfellows/eth.png"
             alt="ETH"
-            width={160}
-            height={160}
-            style={{ 
+            style={{
               width: isMobile ? "100px" : "160px",
               height: "auto",
             }}
