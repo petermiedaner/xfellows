@@ -4,7 +4,7 @@ export default function Seminar() {
     title: "Emerging applications of high-repetition rate XFEL sources",
     speaker: "Dr. Chi-Chang Kao",
     affiliation: "SLAC",
-    date: "June 14, 2026",
+    date: "TBD",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/pbRMNeuDTsyJEPoZutEjjw",
     abstract: `XFEL science.`,
