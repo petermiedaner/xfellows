@@ -2,13 +2,7 @@ import InteractiveMap from "./components/InteractiveMap";
 
 export default function Home() {
   return (
-    <main style={{
-      display: "flex",
-      minHeight: "100vh",
-      flexDirection: "column",
-      alignItems: "center",
-      paddingTop: "150px",
-    }}>
+    <main className="page-shell page-shell-centered">
       <h1 style={{
         fontSize: "clamp(16px, 1.5vw, 24px)",
         padding: "20px",

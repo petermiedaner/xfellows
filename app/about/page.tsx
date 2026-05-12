@@ -3,15 +3,7 @@ import { FaEnvelope, FaGraduationCap } from "react-icons/fa";
 
 export default function About() {
   return (
-    <main style={{
-      display: "flex",
-      minHeight: "100vh",
-      flexDirection: "column",
-      alignItems: "flex-start",
-      padding: "40px 60px",
-      fontFamily: "Arial, Helvetica, sans-serif",
-      paddingTop: "120px",
-    }}>
+    <main className="page-shell">
       {/* Title */}
       <h1 style={{
         fontSize: "clamp(20px, 3vw, 32px)",

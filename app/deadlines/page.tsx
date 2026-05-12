@@ -164,15 +164,7 @@ export default function Deadlines() {
   }
 
   return (
-    <main style={{
-      display: "flex",
-      minHeight: "100vh",
-      flexDirection: "column",
-      alignItems: "flex-start",
-      padding: "40px 60px",
-      fontFamily: "Arial, Helvetica, sans-serif",
-      paddingTop: "120px",
-    }}>
+    <main className="page-shell">
       <h1 style={{
         fontSize: "clamp(20px, 3vw, 32px)",
         fontWeight: "bold",
@@ -212,12 +204,7 @@ export default function Deadlines() {
         </div>
       </div>
 
-      <div style={{
-        width: "100%",
-        maxWidth: "1000px",
-        overflowX: "auto",
-        marginBottom: "50px",
-      }}>
+      <div className="page-table-container">
         <table style={{
           width: "100%",
           borderCollapse: "collapse",

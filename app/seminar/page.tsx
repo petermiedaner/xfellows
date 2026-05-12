@@ -67,15 +67,7 @@ export default function Seminar() {
   const pastSeminars = seminars.filter(s => s.status === "past");
 
   return (
-    <main style={{
-      display: "flex",
-      minHeight: "100vh",
-      flexDirection: "column",
-      alignItems: "flex-start",
-      padding: "40px 60px",
-      fontFamily: "Arial, Helvetica, sans-serif",
-      paddingTop: "120px",
-    }}>
+    <main className="page-shell">
       {/* Title */}
       <h1 style={{
         fontSize: "clamp(20px, 3vw, 32px)",
@@ -109,16 +101,7 @@ export default function Seminar() {
         Next Seminar
       </h2>
 
-      <div style={{
-        backgroundColor: "white",
-        border: "2px solid #ea5078",
-        borderRadius: "12px",
-        padding: "30px",
-        maxWidth: "900px",
-        width: "100%",
-        marginBottom: "50px",
-        boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-      }}>
+      <div className="seminar-card">
         {/* Seminar Title */}
         <h3 style={{
           fontSize: "clamp(16px, 2vw, 22px)",
@@ -204,12 +187,7 @@ export default function Seminar() {
         Upcoming Seminars
       </h2>
 
-      <div style={{
-        width: "100%",
-        maxWidth: "900px",
-        overflowX: "auto",
-        marginBottom: "50px",
-      }}>
+      <div className="seminar-table-container">
         <table style={{
           width: "100%",
           borderCollapse: "collapse",
@@ -255,12 +233,7 @@ export default function Seminar() {
         Past Seminars
       </h2>
 
-      <div style={{
-        width: "100%",
-        maxWidth: "900px",
-        overflowX: "auto",
-        marginBottom: "50px",
-      }}>
+      <div className="seminar-table-container">
         <table style={{
           width: "100%",
           borderCollapse: "collapse",
