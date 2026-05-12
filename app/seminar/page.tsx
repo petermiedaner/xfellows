@@ -40,6 +40,20 @@ export default function Seminar() {
       topic: "TBD",
       status: "upcoming",
     },
+    {
+      date: "TBD",
+      speaker: "Dr. Martin Beye",
+      affiliation: "Stockholm Universitet, Department of Physics",
+      topic: "TBD",
+      status: "upcoming",
+    },
+    {
+      date: "TBD",
+      speaker: "Dr. Kartik Ayyer",
+      affiliation: "Max Plank Institute for the Structure and Dynamics of Matter, Hamburg DE",
+      topic: "TBD",
+      status: "upcoming",
+    },
     // {
     //   date: "June 1, 2026",
     //   speaker: "Example",
