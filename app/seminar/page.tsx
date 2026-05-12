@@ -41,7 +41,7 @@ export default function Seminar() {
       status: "upcoming",
     },
     {
-      date: "TBD",
+      date: "September 2, 2026",
       speaker: "Dr. Martin Beye",
       affiliation: "Stockholm Universitet, Department of Physics",
       topic: "TBD",
