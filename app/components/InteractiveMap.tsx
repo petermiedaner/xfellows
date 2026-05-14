@@ -5,23 +5,23 @@ import { useState } from "react";
 const xfelLocations = [
   {
     id: 1,
-    name: "European XFEL",
+    name: "European XFEL and FLASH FEL",
     city: "Hamburg, Germany",
-    description: "The largest X-ray laser in the world. 27,000 flashes per second.",
+    description: "FLASH - the world's first XUV and soft X-ray FEL. EuXFEL - Currently the largest X-ray laser in the world. 27,000 flashes per second.",
     image: "/xfellows/EuropeanXFEL.jpeg",
     top: "19.75%",
-    left: "49.25%",
+    left: "48.9%",
     color: "#ea5078",
     tooltipPosition: "center",
   },
   {
     id: 2,
     name: "LCLS",
-    city: "Stanford, USA",
+    city: "Menlo Park, USA",
     description: "The world's first hard X-ray free-electron laser.",
     image: "/xfellows/lcls.jpg",
-    top: "32.5%",
-    left: "7%",
+    top: "32.25%",
+    left: "5.5%",
     color: "#005ba5",
     tooltipPosition: "right",
   },
@@ -31,8 +31,8 @@ const xfelLocations = [
     city: "Hyogo, Japan",
     description: "A compact XFEL facility producing powerful X-ray pulses.",
     image: "/xfellows/sacla.jpg",
-    top: "31%",
-    left: "91%",
+    top: "32%",
+    left: "92.5%",
     color: "#519d6f",
     tooltipPosition: "left",
   },
@@ -53,8 +53,8 @@ const xfelLocations = [
     city: "Pohang, South Korea",
     description: "South Korea's hard X-ray free-electron laser facility.",
     image: "/xfellows/pal.jpg",
-    top: "29.5%",
-    left: "87%",
+    top: "30.5%",
+    left: "88.5%",
     color: "#8b5cf6",
     tooltipPosition: "left",
   },
@@ -64,34 +64,73 @@ const xfelLocations = [
     city: "Trieste, Italy",
     description: "Seeded EUV to soft x-ray free-electron laser",
     image: "/xfellows/fermi.jpg",
-    top: "26%",
-    left: "51.5%",
+    top: "26.5%",
+    left: "51%",
     color: "#5bb1c9",
+    tooltipPosition: "center",
+  },
+  {
+    id: 7,
+    name: "SHINE XFEL",
+    city: "Shanghai, China",
+    description: "A high-repetition rate hard X-ray FEL facility",
+    image: "/xfellows/shine.png",
+    top: "35.5%",
+    left: "87.5%",
+    color: "#ac5bc9",
     tooltipPosition: "center",
   },
 ];
 
-function getTooltipStyle(position: string) {
+function getTooltipStyle(position: string, top: string) {
+  const topPercent = parseFloat(top);
+  const isTopHalf = topPercent < 50;
+
   switch (position) {
     case "right":
       return {
-        bottom: "30px",
+        [isTopHalf ? "top" : "bottom"]: "30px",
         left: "0",
         transform: "translateX(0)",
       };
     case "left":
       return {
-        bottom: "30px",
+        [isTopHalf ? "top" : "bottom"]: "30px",
         right: "0",
         transform: "translateX(0)",
       };
     default:
       return {
-        bottom: "30px",
+        [isTopHalf ? "top" : "bottom"]: "30px",
         left: "50%",
         transform: "translateX(-50%)",
       };
   }
+}
+
+const xfelNamesToBold = [
+  "European XFEL",
+  "FLASH FEL",
+  "FLASH",
+  "EuXFEL",
+  "LCLS",
+  "SACLA",
+  "SwissFEL",
+  "PAL-XFEL",
+  "FERMI FEL",
+];
+
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\\]\\]/g, "\\$&");
+}
+
+function formatDescription(text: string) {
+  const regex = new RegExp(`(${xfelNamesToBold.map(escapeRegExp).join("|")})`, "g");
+  const parts = text.split(regex);
+
+  return parts.map((part, index) =>
+    xfelNamesToBold.includes(part) ? <strong key={index}>{part}</strong> : part
+  );
 }
 
 export default function InteractiveMap() {
@@ -128,14 +167,26 @@ export default function InteractiveMap() {
         .pulsating-dot-4 { animation: pulsate-4 2s infinite; }
         .pulsating-dot-5 { animation: pulsate-5 2s infinite; }
         .pulsating-dot-6 { animation: pulsate-6 2s infinite; }
+        .pulsating-dot-7 { animation: pulsate-7 2s infinite; }
+        .dot {
+          width: 16px;
+          height: 16px;
+          border: 2px solid white;
+        }
+        @media (max-width: 768px) {
+          .dot {
+            width: 12px;
+            height: 12px;
+            border: 1px solid white;
+          }
+        }
       `}</style>
 
       <div style={{
         position: "relative",
         width: "100%",
         maxWidth: "1200px",
-        margin: "40px auto",
-        padding: "0 20px",
+        margin: "40px 20px",
       }}>
         {/* Map Image */}
         <img
@@ -164,13 +215,10 @@ export default function InteractiveMap() {
           >
             {/* Dot */}
             <div
-              className={activePoint === null ? `pulsating-dot-${location.id}` : ""}
+              className={`dot ${activePoint === null ? `pulsating-dot-${location.id}` : ""}`}
               style={{
-                width: "16px",
-                height: "16px",
                 backgroundColor: location.color,
                 borderRadius: "50%",
-                border: "2px solid white",
                 boxShadow: `0 0 0 ${activePoint === location.id ? "8px" : "0px"} ${location.color}40`,
                 transition: "box-shadow 0.3s ease",
               }}
@@ -180,12 +228,12 @@ export default function InteractiveMap() {
             {activePoint === location.id && (
               <div style={{
                 position: "absolute",
-                ...getTooltipStyle(location.tooltipPosition),
+                ...getTooltipStyle(location.tooltipPosition, location.top),
                 backgroundColor: "#faf8f5",
                 borderRadius: "8px",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
                 overflow: "hidden",
-                zIndex: 1001,
+                zIndex: 9999,
                 borderTop: `3px solid ${location.color}`,
                 width: "280px",
                 whiteSpace: "normal",
@@ -215,11 +263,11 @@ export default function InteractiveMap() {
                 }}>
                   <p style={{
                     fontSize: "16px",
-                    fontWeight: "bold",
+                    fontWeight: 700,
                     color: location.color,
                     margin: "0 0 4px 0",
                   }}>
-                    {location.name}
+                    <strong>{location.name}</strong>
                   </p>
                   <p style={{
                     fontSize: "13px",
@@ -234,7 +282,7 @@ export default function InteractiveMap() {
                     margin: 0,
                     lineHeight: "1.4",
                   }}>
-                    {location.description}
+                    {formatDescription(location.description)}
                   </p>
                 </div>
               </div>

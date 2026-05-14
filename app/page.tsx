@@ -8,7 +8,7 @@ export default function Home() {
         padding: "20px",
         textAlign: "center",
       }}>
-        The six existing X-ray Free-Electron Lasers (XFELs) are transforming 
+        The eight existing X-ray Free-Electron Lasers (XFELs) are transforming 
         our understanding of physical phenomena
       </h1>
 
