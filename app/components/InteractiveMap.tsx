@@ -8,7 +8,7 @@ const xfelLocations = [
     name: "European XFEL and FLASH FEL",
     city: "Hamburg, Germany",
     description: "FLASH - the world's first XUV and soft X-ray FEL. EuXFEL - Currently the largest X-ray laser in the world. 27,000 flashes per second.",
-    image: "/xfellows/EuropeanXFEL.jpeg",
+    image: "/EuropeanXFEL.jpeg",
     top: "19.75%",
     left: "48.9%",
     color: "#ea5078",
@@ -19,7 +19,7 @@ const xfelLocations = [
     name: "LCLS",
     city: "Menlo Park, USA",
     description: "The world's first hard X-ray free-electron laser.",
-    image: "/xfellows/lcls.jpg",
+    image: "/lcls.jpg",
     top: "32.25%",
     left: "5.5%",
     color: "#005ba5",
@@ -30,7 +30,7 @@ const xfelLocations = [
     name: "SACLA",
     city: "Hyogo, Japan",
     description: "A compact XFEL facility producing powerful X-ray pulses.",
-    image: "/xfellows/sacla.jpg",
+    image: "/sacla.jpg",
     top: "32%",
     left: "92.5%",
     color: "#519d6f",
@@ -41,7 +41,7 @@ const xfelLocations = [
     name: "SwissFEL",
     city: "Villigen, Switzerland",
     description: "Compact free-electron laser at the Paul Scherrer Institute.",
-    image: "/xfellows/swissfel.jpg",
+    image: "/swissfel.jpg",
     top: "23.5%",
     left: "51.5%",
     color: "#f59e0b",
@@ -52,7 +52,7 @@ const xfelLocations = [
     name: "PAL-XFEL",
     city: "Pohang, South Korea",
     description: "South Korea's hard X-ray free-electron laser facility.",
-    image: "/xfellows/pal.jpg",
+    image: "/pal.jpg",
     top: "30.5%",
     left: "88.5%",
     color: "#8b5cf6",
@@ -63,7 +63,7 @@ const xfelLocations = [
     name: "FERMI FEL",
     city: "Trieste, Italy",
     description: "Seeded EUV to soft x-ray free-electron laser",
-    image: "/xfellows/fermi.jpg",
+    image: "/fermi.jpg",
     top: "26.5%",
     left: "51%",
     color: "#5bb1c9",
@@ -74,7 +74,7 @@ const xfelLocations = [
     name: "SHINE XFEL",
     city: "Shanghai, China",
     description: "A high-repetition rate hard X-ray FEL facility",
-    image: "/xfellows/shine.png",
+    image: "/shine.png",
     top: "35.5%",
     left: "87.5%",
     color: "#ac5bc9",
@@ -190,7 +190,7 @@ export default function InteractiveMap() {
       }}>
         {/* Map Image */}
         <img
-          src="/xfellows/worldmap.png"
+          src="/worldmap.png"
           alt="World Map"
           style={{
             width: "100%",

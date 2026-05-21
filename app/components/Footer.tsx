@@ -50,7 +50,7 @@ export default function Footer() {
       >
         <a href="https://example.org" target="_blank" rel="noopener noreferrer">
           <img
-            src="/xfellows/mit.png"
+            src="/mit.png"
             alt="MIT"
             style={{
               width: isMobile ? "48px" : "64px",
@@ -61,7 +61,7 @@ export default function Footer() {
 
         <a href="https://example2.org" target="_blank" rel="noopener noreferrer">
           <img
-            src="/xfellows/eth.png"
+            src="/eth.png"
             alt="ETH"
             style={{
               width: isMobile ? "100px" : "160px",
