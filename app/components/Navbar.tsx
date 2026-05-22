@@ -45,7 +45,7 @@ export default function Navbar() {
       {/* Logo */}
       <Link href="/">
         <img
-          src="/xfellows/xfellas_logo.png"
+          src="/xfellas_logo.png"
           alt="My Logo"
           style={{
             width: isMobile ? "100px" : isTablet ? "150px" : "300px",
