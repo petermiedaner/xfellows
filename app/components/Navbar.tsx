@@ -86,8 +86,14 @@ export default function Navbar() {
           justifyContent: "left",
           flexGrow: 1,
           width: isMobile ? "100%" : "auto",
-          padding: isMobile ? "15px 0" : isTablet ? "20px" : "50px",
+          padding: isMobile ? "15px 20px" : isTablet ? "20px" : "50px",
           fontSize: isTablet ? "14px" : "20px",
+          position: isMobile ? "absolute" : "relative",
+          top: isMobile ? "100%" : "auto",
+          left: isMobile ? "0" : "auto",
+          right: isMobile ? "0" : "auto",
+          backgroundColor: isMobile ? "#faf8f5" : "transparent",
+          boxShadow: isMobile ? "0 4px 6px rgba(0, 0, 0, 0.1)" : "none",
         }}>
           <Link 
             href="/"
