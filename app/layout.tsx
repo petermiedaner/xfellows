@@ -32,7 +32,7 @@ export default function RootLayout({
         </Script>
 
         <Navbar />
-        <main style={{ flexGrow: 1, minWidth: 0 }}>{children}</main>
+        <main style={{ flexGrow: 1, minWidth: 0 }} className="main-content">{children}</main>
         <Footer />
       </body>
     </html>

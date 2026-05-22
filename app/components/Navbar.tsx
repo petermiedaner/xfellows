@@ -8,10 +8,12 @@ export default function Navbar() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
   useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth <= 768);
+      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1024);
       if (window.innerWidth > 768) setMenuOpen(false);
     }
     handleResize();
@@ -22,7 +24,7 @@ export default function Navbar() {
   return (
     <nav style={{
       display: "flex",
-      flexWrap: "wrap",
+      flexWrap: "nowrap",
       alignItems: "center",
       padding: "0px 20px",
       backgroundColor: "#faf8f5",
@@ -37,6 +39,7 @@ export default function Navbar() {
       boxSizing: "border-box",
       zIndex: 1000,
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+      height: isTablet ? "70px" : isMobile ? "60px" : "80px",
     }}>
 
       {/* Logo */}
@@ -45,7 +48,7 @@ export default function Navbar() {
           src="/xfellows/xfellas_logo.png"
           alt="My Logo"
           style={{
-            width: isMobile ? "100px" : "300px",
+            width: isMobile ? "100px" : isTablet ? "150px" : "300px",
             height: "auto",
           }}
         />
@@ -78,12 +81,13 @@ export default function Navbar() {
         <div style={{
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
-          gap: "20px",
+          gap: isTablet ? "10px" : "20px",
           alignItems: isMobile ? "flex-start" : "center",
           justifyContent: "left",
           flexGrow: 1,
           width: isMobile ? "100%" : "auto",
-          padding: isMobile ? "15px 0" : "50px",
+          padding: isMobile ? "15px 0" : isTablet ? "20px" : "50px",
+          fontSize: isTablet ? "14px" : "20px",
         }}>
           <Link 
             href="/"
