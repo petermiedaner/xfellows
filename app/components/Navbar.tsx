@@ -43,12 +43,12 @@ export default function Navbar() {
     }}>
 
       {/* Logo */}
-      <Link href="/">
+      <Link href="/" style={{ padding: isMobile ? "0px 0" : isTablet ? "8px 0" : "50px 0", display: "flex" }}>
         <img
           src="/xfellas_logo.png"
           alt="My Logo"
           style={{
-            width: isMobile ? "100px" : isTablet ? "150px" : "300px",
+            width: isMobile ? "150px" : isTablet ? "150px" : "250px",
             height: "auto",
           }}
         />
