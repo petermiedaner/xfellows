@@ -4,7 +4,7 @@ export default function Seminar() {
     title: "Emerging applications of high-repetition rate XFEL sources",
     speaker: "Dr. Chi-Chang Kao",
     affiliation: "SLAC",
-    date: "TBD",
+    date: "June 18th, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/pbRMNeuDTsyJEPoZutEjjw",
     abstract: `XFEL science.`,
@@ -13,7 +13,7 @@ export default function Seminar() {
   // Seminar schedule data
   const seminars = [
     {
-      date: "June 14, 2026",
+      date: "June 18, 2026",
       speaker: "Dr. Chi-Chang Kao",
       affiliation: "SLAC",
       topic: "Emerging applications of high-repetition rate XFEL sources",
