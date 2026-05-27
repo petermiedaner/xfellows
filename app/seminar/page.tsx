@@ -23,7 +23,7 @@ export default function Seminar() {
       date: "July 1, 2026",
       speaker: "Dr. Claudio Masciovecchio",
       affiliation: "Director - FERMI FEL",
-      topic: "TBD",
+      topic: "Exploring the Nanoscale with Free Electron Lasers: Current Advances and Future Prospects",
       status: "upcoming",
     },
     {
