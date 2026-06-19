@@ -55,7 +55,7 @@ export default function Deadlines() {
     {
       facility: "FERMI",
       location: "Trieste, Italy",
-      nextDeadline: "June 3rd, 2026",
+      nextDeadline: "June 3, 2026",
       time: "23:59",
       timezone: "Europe/Rome",
       tzAbbr: "CET",
