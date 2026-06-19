@@ -7,21 +7,7 @@ export default function Seminar() {
     date: "July 1, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/pbRMNeuDTsyJEPoZutEjjw",
-    abstract: `Over the last decade, X-ray FEL with its high peak power and femtosecond 
-    time resolution has opened many new exciting research directions, from ultrafast 
-    chemical dynamics to high energy density science. The advent of high repetition X-ray
-     FEL, enabled by superconducting accelerator technology, has pushed the average spectral 
-     brightness of x-ray FEL orders of magnitude higher than storage rings. One of the 
-     promising uses of this spectral brightness is high-resolution inelastic x-ray scattering.
-      In this talk, I will first introduce inelastic x-ray scattering and illustrate the types
-       of elementary excitations in condensed matter that can be studied with inelastic x-ray 
-       scattering. It will be followed by a summary of developments in FEL that are critical 
-       to the increase in spectral brightness, specifically self-seeding and cavity-based 
-       x-ray FEL. Finally, I will discuss a few potential scientific opportunities in 
-       using inelastic x-ray scattering offered by this spectral brightness, and how the 
-       scientific community and large user facilities can work together to further define the 
-       science case and develop the necessary instrumentation to realize this unique scientific
-        capability and opportunity.`,
+    abstract: ``,
   };
 
   // Seminar schedule data
