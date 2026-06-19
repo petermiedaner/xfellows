@@ -1,10 +1,10 @@
 export default function Seminar() {
   // Upcoming seminar data
   const upcomingSeminar = {
-    title: "Inelastic X-ray Scattering Using High Repetition Rate X-ray FEL",
-    speaker: "Dr. Chi-Chang Kao",
-    affiliation: "SLAC",
-    date: "June 18th, 2026",
+    title: "Exploring the Nanoscale with Free Electron Lasers: Current Advances and Future Prospects",
+    speaker: "Dr. Claudio Masciovecchio",
+    affiliation: "Director - FERMI FEL",
+    date: "July 1, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/pbRMNeuDTsyJEPoZutEjjw",
     abstract: `Over the last decade, X-ray FEL with its high peak power and femtosecond 
@@ -31,7 +31,7 @@ export default function Seminar() {
       speaker: "Dr. Chi-Chang Kao",
       affiliation: "Professor of Photon Science - Stanford University & Emeritus Director - SLAC",
       topic: "Inelastic X-ray Scattering Using High Repetition Rate X-ray FEL ",
-      status: "upcoming",
+      status: "past",
     },
     {
       date: "July 1, 2026",
