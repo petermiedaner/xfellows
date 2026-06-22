@@ -3,7 +3,7 @@ export default function Seminar() {
   const upcomingSeminar = {
     title: "Exploring the Nanoscale with Free Electron Lasers: Current Advances and Future Prospects",
     speaker: "Dr. Claudio Masciovecchio",
-    affiliation: "Director - FERMI FEL",
+    affiliation: "Director, FERMI FEL",
     date: "July 1, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/z99FTUtTRMql3c_Jd5jH8A",
