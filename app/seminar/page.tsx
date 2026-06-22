@@ -7,7 +7,7 @@ export default function Seminar() {
     date: "July 1, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/pbRMNeuDTsyJEPoZutEjjw",
-    abstract: ``,
+    abstract: `The recent advent of Free Electron Lasers (FELs) has made it possible to extend experimental techniques, traditionally used with tabletop pulsed lasers, into much shorter wavelength regimes. This advancement opens the door to probing ultrafast dynamical processes with unprecedented spatial and temporal resolution. Among the growing suite of FEL-based experimental approaches, nonlinear spectroscopies in the vacuum ultraviolet to soft X-ray energy range are particularly promising. Pioneering wave-mixing experiments conducted at the FERMI FEL have demonstrated that nonlinear optical techniques can now be successfully applied at nanometer wavelengths. These achievements mark a significant milestone and pave the way for a new class of experiments—ranging from studying nanoscale heat transport to observing conformational changes in small molecules during and after ligand binding.`,
   };
 
   // Seminar schedule data
