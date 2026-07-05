@@ -70,7 +70,7 @@ export default function Footer() {
           />
         </a>
 
-        <a href="https://example2.org" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://example2.org" target="_blank" rel="noopener noreferrer">
           <img
             src="/canterbury.png"
             alt="ETH"
@@ -79,7 +79,7 @@ export default function Footer() {
               height: "auto",
             }}
           />
-        </a>
+        </a> */}
       </div>
     </footer>
   );
