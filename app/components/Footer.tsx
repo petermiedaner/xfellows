@@ -9,7 +9,6 @@ export default function Footer() {
     function handleResize() {
       setIsMobile(window.innerWidth <= 768);
     }
-
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -33,12 +32,10 @@ export default function Footer() {
     >
       {/* Left side text */}
       <div>
-        <p
-          style={{
-            margin: 0,
-            textAlign: isMobile ? "center" : "left",
-          }}
-        >
+        <p style={{ 
+          margin: 0,
+          textAlign: isMobile ? "center" : "left",
+        }}>
           2026 XFELLOWs - Gateway to XFEL science.
         </p>
       </div>
@@ -49,11 +46,9 @@ export default function Footer() {
           display: "flex",
           gap: "16px",
           alignItems: "center",
-          flexWrap: "wrap",
-          justifyContent: "center",
         }}
       >
-        <a href="https://www.mit.edu" target="_blank" rel="noopener noreferrer">
+        <a href="https://example.org" target="_blank" rel="noopener noreferrer">
           <img
             src="/mit.png"
             alt="MIT"
@@ -64,23 +59,12 @@ export default function Footer() {
           />
         </a>
 
-        <a href="https://ethz.ch/en.html" target="_blank" rel="noopener noreferrer">
+        <a href="https://example2.org" target="_blank" rel="noopener noreferrer">
           <img
             src="/eth.png"
             alt="ETH"
             style={{
               width: isMobile ? "100px" : "160px",
-              height: "auto",
-            }}
-          />
-        </a>
-
-        <a href="https://www.canterbury.ac.nz" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/canterbury.png"
-            alt="University of Canterbury"
-            style={{
-              width: isMobile ? "60px" : "100px",
               height: "auto",
             }}
           />
