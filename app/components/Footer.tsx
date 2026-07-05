@@ -69,6 +69,17 @@ export default function Footer() {
             }}
           />
         </a>
+
+        <a href="https://example2.org" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/canterbury.png"
+            alt="ETH"
+            style={{
+              width: isMobile ? "60px" : "100px",
+              height: "auto",
+            }}
+          />
+        </a>
       </div>
     </footer>
   );
