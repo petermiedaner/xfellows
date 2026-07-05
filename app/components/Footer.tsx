@@ -78,7 +78,7 @@ export default function Footer() {
         <a href="https://www.canterbury.ac.nz" target="_blank" rel="noopener noreferrer">
           <img
             src="/canterbury.png"
-            alt="University Name"
+            alt="University of Canterbury"
             style={{
               width: isMobile ? "60px" : "100px",
               height: "auto",
