@@ -12,10 +12,10 @@ export default function About() {
       scholar: "https://scholar.google.com/citations?user=-0Y0IxIAAAAJ",
     },
     {
-      name: "Joe Chen, Ph.D.",
+      name: "Joe Chen",
       position: "Postdoctoral researcher, University of Canterbury",
       image: "/joe1-2.jpg",
-      email: "pikajoe.chen@gmail.com",
+      email: "joe.chen@canterbury.ac.nz",
       scholar: "https://scholar.google.com/citations?user=vOtj23kAAAAJ&hl=en",
     },
   ];
