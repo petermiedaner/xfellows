@@ -1,13 +1,13 @@
 export default function Seminar() {
   // Upcoming seminar data
   const upcomingSeminar = {
-    title: "Ongoing research at the FXE beamline at the EuXFEL",
+    title: "Probing ultrafast structural and electronic dynamics in advanced materials using X-ray free electron lasers",
     speaker: "Dr. Chris Milne",
     affiliation: "Group Leader - Femtosecond X-ray Experiements EuXFEL",
     date: "July 22, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/iUa0MO9oTj2MkOny_NJDfg",
-    abstract: `To be announnced.`,
+    abstract: `X-ray spectroscopy and scattering allow a unique combination of electronic and structural information to be obtained from a variety of different types of samples in many different forms (solid, liquid, gas). The extension of these methods into the time domain has allowed measurement of dynamic processes, for example following charge transfer in molecular photocatalysts[1] or probing non-equilibrium melting in metals[2]. In recent years X-rays have started to become routinely used to measure light-activated processes using a pump-probe scheme, where the sample is photoexcited with light and then probed after a variable time delay using an X-ray pulse. With the recent development of X-ray free electron lasers (XFELs), time-resolved X-ray techniques have moved into the ultrafast regime, where the timescales of electron and nuclear motion can be accessed using the femtosecond X-ray pulses available from these facilities.`,
   };
 
   // Seminar schedule data
