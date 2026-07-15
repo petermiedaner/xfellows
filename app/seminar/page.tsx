@@ -7,7 +7,18 @@ export default function Seminar() {
     date: "July 22, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/iUa0MO9oTj2MkOny_NJDfg",
-    abstract: `X-ray spectroscopy and scattering allow a unique combination of electronic and structural information to be obtained from a variety of different types of samples in many different forms (solid, liquid, gas). The extension of these methods into the time domain has allowed measurement of dynamic processes, for example following charge transfer in molecular photocatalysts[1] or probing non-equilibrium melting in metals[2]. In recent years X-rays have started to become routinely used to measure light-activated processes using a pump-probe scheme, where the sample is photoexcited with light and then probed after a variable time delay using an X-ray pulse. With the recent development of X-ray free electron lasers (XFELs), time-resolved X-ray techniques have moved into the ultrafast regime, where the timescales of electron and nuclear motion can be accessed using the femtosecond X-ray pulses available from these facilities.`,
+    abstract: `X-ray spectroscopy and scattering allow a unique combination of electronic and structural information to be obtained from a variety of different types of samples in many different forms (solid, liquid, gas). The extension of these methods into the time domain has allowed measurement of dynamic processes, for example following charge transfer in molecular photocatalysts[1] or probing non-equilibrium melting in metals[2]. In recent years X-rays have started to become routinely used to measure light-activated processes using a pump-probe scheme, where the sample is photoexcited with light and then probed after a variable time delay using an X-ray pulse. With the recent development of X-ray free electron lasers (XFELs), time-resolved X-ray techniques have moved into the ultrafast regime, where the timescales of electron and nuclear motion can be accessed using the femtosecond X-ray pulses available from these facilities.
+    This talk will present an overview of how X-ray techniques are being used at XFELs to probe advanced materials and the type of information the measurements can provide[3]. The talk will introduce the European XFEL, a high-repetition rate XFEL facility located in northern Germany[4], and will show some examples of the types of measurements XFELs can perform and the scientific questions that can be answered using ultrafast X-ray techniques.
+
+1. Nowakowski, M. et al. Ultrafast Two‐Color X‐Ray Emission Spectroscopy Reveals Excited State Landscape in a Base Metal Dyad. Adv. Sci. 11, 2404348 (2024).
+
+2. Antonowicz, J. et al. Structural pathways for ultrafast melting of optically excited thin polycrystalline Palladium films. Acta Mater. 276, 120043 (2024).
+
+3. Seddon, E. A. et al. Short-wavelength free-electron laser sources and science: a review*. Rep Prog Phys 80, 115901 (2017). 
+
+4. Tschentscher, T. et al. Photon Beam Transport and Scientific Instruments at the European XFEL. Appl. Sci. 7, 592 (2017).
+
+    `,
   };
 
   // Seminar schedule data
