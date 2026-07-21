@@ -41,7 +41,7 @@ export default function Seminar() {
       date: "July 22, 2026",
       speaker: "Dr. Chris Milne",
       affiliation: "Group Leader - Femtosecond X-ray Experiements EuXFEL",
-      topic: "TBD",
+      topic: "Probing ultrafast structural and electronic dynamics in advanced materials using X-ray free electron lasers",
       status: "upcoming",
     },
     {
