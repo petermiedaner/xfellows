@@ -45,6 +45,13 @@ export default function Seminar() {
       status: "upcoming",
     },
     {
+      date: "August 5, 2026",
+      speaker: "Prof. Ben Ofori-Okai",
+      affiliation: "Assistant Professor of Photon Science - Stanford Pulse Institute",
+      topic: "TBD",
+      status: "upcoming",
+    },
+    {
       date: "TBD",
       speaker: "Dr. Kelly Gaffney",
       affiliation: "Professor of Photon Science - Stanford University & Director - LCLS",
