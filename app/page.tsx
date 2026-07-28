@@ -26,8 +26,8 @@ export default function Home() {
             What is an XFEL?
           </h2>
           <p>
-            An X-ray Free-Electron Laser (XFELss) is a next-generation light source that produces intense, coherent X-rays pulses of attosecond to femtosecond pulse durations.
-            XFELs use relativistic electron beams accelerated in a Linac, which pass through 
+            An X-ray Free-Electron Laser (XFEL) is a next-generation light source that produces intense, coherent X-rays pulses of attosecond to femtosecond pulse durations.
+            XFELs use relativistic electron beams accelerated in a linac (linear accelerator), which pass through 
             specially designed periodic magnetic structures called undulators to generate extremely bright, laser-like X-ray pulses.
           </p>
         </div>
@@ -37,8 +37,8 @@ export default function Home() {
             How Does It Work?
           </h2>
           <p>
-            XFELs accelerate electrons to nearly the speed of light using linear accelerators (linacs). These electrons then pass through 
-            an undulator—a periodic magnetic structure that forces the electrons to oscillate perpendicular to their direction of motion. 
+            XFELs accelerate electrons to nearly the speed of light. These electrons then pass through 
+            an undulator, which is a periodic magnetic structure that forces the electrons to oscillate perpendicular to their direction of motion. 
             This oscillation causes the electrons to emit X-ray photons. Crucially, the electrons interact with their own radiation field, 
             leading to <i>microbunching</i>: the electrons organize into ultra-short, micron-scale bunches that amplify the X-ray emission exponentially. 
             The result is a coherent, laser-like X-ray beam of unprecedented brightness and ultrashort pulse duration (typically femtoseconds).
