@@ -1,13 +1,13 @@
 export default function Seminar() {
   // Upcoming seminar data
   const upcomingSeminar = {
-    title: "TBA",
+    title: "Applications of XFELs for High Energy Density Science",
     speaker: "Prof. Ben Ofori-Okai",
     affiliation: "Assistant Professor of Photon Science - Stanford Pulse Institute",
     date: "August 5, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
     zoomLink: "https://mit.zoom.us/meeting/register/Ca1LFdwxS_GuHtH7SD995A",
-    abstract: `TBA`,
+    abstract: `At temperatures in excess of 10000 K, and pressures on the order of a million atmospheres, one encounters High Energy Density matter. Materials under these conditions exhibit properties that can be similar to those of plasmas (e.g. free electrons) but also those of condensed phases (e.g. strong correlations). This makes modeling the properties of these materials challenging, as there is no “small parameter” and building a theoretical model is challenging. Furthermore, probing these states are quite challenging as they are not stable at standard temperature and pressure. However, these conditions are found all over the universe. In this talk, I will discuss HED matter and why XFELs are incisive tools for probing HED systems. I will then discuss some recent results where XFEL measurements were used to observe phase transformations and provide additional constraints to experimental measurements.`,
   };
 
   // Seminar schedule data
