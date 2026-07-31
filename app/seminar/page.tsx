@@ -37,7 +37,7 @@ export default function Seminar() {
       date: "August 5, 2026",
       speaker: "Ben Ofori-Okai",
       affiliation: "Assistant Professor of Photon Science - Stanford Pulse Institute",
-      topic: "TBA",
+      topic: "Applications of XFELs for High Energy Density Science",
       status: "upcoming",
     },
     {
