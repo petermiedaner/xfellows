@@ -35,7 +35,7 @@ export default function Deadlines() {
     {
       facility: "SwissFEL",
       location: "Villigen, Switzerland",
-      nextDeadline: "March 16, 2026",
+      nextDeadline: "September 15, 2026",
       time: "17:00",
       timezone: "Europe/Zurich",
       tzAbbr: "CET",
@@ -45,8 +45,8 @@ export default function Deadlines() {
     {
       facility: "PAL-XFEL",
       location: "Pohang, South Korea",
-      nextDeadline: "April 24, 2026",
-      time: "17:00",
+      nextDeadline: "August 26, 2026",
+      time: "23:59",
       timezone: "Asia/Seoul",
       tzAbbr: "KST",
       color: "#8b5cf6",
