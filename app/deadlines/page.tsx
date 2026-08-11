@@ -36,7 +36,7 @@ export default function Deadlines() {
       facility: "SwissFEL",
       location: "Villigen, Switzerland",
       nextDeadline: "September 15, 2026",
-      time: "17:00",
+      time: "23:59",
       timezone: "Europe/Zurich",
       tzAbbr: "CET",
       color: "#f59e0b",
