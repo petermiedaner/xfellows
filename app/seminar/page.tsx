@@ -58,7 +58,7 @@ export default function Seminar() {
       date: "September 9, 2026",
       speaker: "Martin Beye",
       affiliation: "Professor - Stockholm Universitet, Department of Physics",
-      topic: "TBA",
+      topic: "Towards femtochemistry X-ray studies of catalysis on surfaces under operando",
       status: "upcoming",
     },
     {
