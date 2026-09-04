@@ -62,7 +62,7 @@ export default function Seminar() {
       status: "upcoming",
     },
     {
-      date: "September 23, 2026",
+      date: "September 30, 2026",
       speaker: "Kartik Ayyer",
       affiliation: "Group Leader - Max Plank Institute for the Structure and Dynamics of Matter, Hamburg DE",
       topic: "TBA",
