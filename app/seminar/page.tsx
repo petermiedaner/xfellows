@@ -1,13 +1,13 @@
 export default function Seminar() {
   // Upcoming seminar data
   const upcomingSeminar = {
-    title: "Towards femtochemistry X-ray studies of catalysis on surfaces under operando",
-    speaker: "Prof. Martin Beye",
-    affiliation: "Professor of Physics - Stockholm Universtiy",
-    date: "September 9, 2026",
+    title: "TBA",
+    speaker: "Kartik Ayyer",
+    affiliation: "Group Leader - Max Plank Institute",
+    date: "September 30, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
-    zoomLink: "https://mit.zoom.us/meeting/register/9UidB5u8Tr6sDZ8rCZjlig",
-    abstract: "Catalytic processes on surfaces are ubiquitous and a profound understanding has become even more important in order to support the energy transition: virtually every process that can convert carbondioxide into fuels and even the production of alternative energy carriers, like hydrogen or ammonia, involves processes on surfaces. Tailoring optimal catalysts that respect the new process conditions not based anymore on natural gas or crude oil, requires a complete understanding of the underlying catalyst configurations, reaction steps and energy landscapes.\n X-ray studies at free-electron lasers have shown to allow to dissect reaction sequences and big steps have been made to study catalysts under operando conditions - often with surprising results. Now the time is ripe to combine both methodologies and an appropriate instrument is being developed. Furthermore, non-linear X-ray methods are being developed and hold great promise to allow for X-ray studies with even higher sensitivity to active surfaces. When this gets combined with the study of operating catalysts, we have a whole new toolbox at hand to understand catalytic reactions while and where bonds are being formed and broken.",
+    zoomLink: "https://mit.zoom.us/meeting/register/thkgauXPS9-JxgCgOYkcVQ",
+    abstract: "tba",
   };
 
   // Seminar schedule data
@@ -41,7 +41,7 @@ export default function Seminar() {
       status: "past",
     },
     {
-      date: "TBA",
+      date: "January 20, 2027",
       speaker: "Kelly Gaffney",
       affiliation: "Professor of Photon Science - Stanford University & Director - LCLS",
       topic: "TBA",
@@ -59,7 +59,7 @@ export default function Seminar() {
       speaker: "Martin Beye",
       affiliation: "Professor - Stockholm Universitet, Department of Physics",
       topic: "Towards femtochemistry X-ray studies of catalysis on surfaces under operando",
-      status: "upcoming",
+      status: "past",
     },
     {
       date: "September 30, 2026",
