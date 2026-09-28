@@ -4,9 +4,9 @@ export default function Seminar() {
     title: "TBA",
     speaker: "Kartik Ayyer",
     affiliation: "Group Leader - Max Plank Institute",
-    date: "September 30, 2026",
+    date: "TBA",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
-    zoomLink: "https://mit.zoom.us/meeting/register/thkgauXPS9-JxgCgOYkcVQ",
+    zoomLink: "",
     abstract: "tba",
   };
 
@@ -62,7 +62,7 @@ export default function Seminar() {
       status: "past",
     },
     {
-      date: "September 30, 2026",
+      date: "TBA",
       speaker: "Kartik Ayyer",
       affiliation: "Group Leader - Max Plank Institute for the Structure and Dynamics of Matter, Hamburg DE",
       topic: "TBA",
