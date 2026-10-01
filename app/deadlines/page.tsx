@@ -25,7 +25,7 @@ export default function Deadlines() {
     {
       facility: "SACLA",
       location: "Hyogo, Japan",
-      nextDeadline: "May 25, 2026",
+      nextDeadline: "November 2, 2026",
       time: "10:00",
       timezone: "Asia/Tokyo",
       tzAbbr: "JST",
