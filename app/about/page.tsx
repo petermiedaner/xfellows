@@ -6,7 +6,7 @@ export default function About() {
   const organizers = [
     {
       name: "Peter Miedaner",
-      position: "Ph.D. Candidate, MIT",
+      position: "Postdoctoral researcher, ETH Zürich",
       image: "/peter.JPEG",
       email: "miedaner@mit.edu",
       scholar: "https://scholar.google.com/citations?user=-0Y0IxIAAAAJ",
@@ -17,6 +17,13 @@ export default function About() {
       image: "/joe1-2.jpg",
       email: "joe.chen@canterbury.ac.nz",
       scholar: "https://scholar.google.com/citations?user=vOtj23kAAAAJ&hl=en",
+    },
+    {
+      name: "Nadia Berndt",
+      position: "Ph.D. candidate, Massachusetts Institute of Technology",
+      image: "",
+      email: "nadiaber@mit.edu",
+      scholar: "https://scholar.google.com/citations?user=487INbkAAAAJ&hl=en",
     },
   ];
 
