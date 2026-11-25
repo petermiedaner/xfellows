@@ -15,7 +15,6 @@ export default function Seminar() {
     [2] Shen, et al, ACS Nano 18, 24, 15576-15589 (2024)
     [3] Shen, et al, ACS Nano 19, 31, 28372-28382 (2025)
     [4] Mall, et al, Light Sci Appl 15, 280 (2026)`,
-  };,
   };
 
   // Seminar schedule data
