@@ -111,7 +111,7 @@ export default function Seminar() {
     {
       date,
       speaker: "Kartik Ayyer",
-      affiliation: "Group Leader - Max Plank Institute for the Structure and Dynamics of Matter, Hamburg DE",
+      affiliation: "Group Leader - Max Planck Institute for the Structure and Dynamics of Matter, Hamburg DE",
       topic: "Serial diffractive imaging at high-repetition-rate XFELs",
       status: "upcoming",
     },
