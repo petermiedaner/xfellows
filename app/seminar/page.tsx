@@ -6,7 +6,7 @@ export default function Seminar() {
     affiliation: "Group Leader - Max Plank Institute",
     date: "December 2, 2026",
     time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
-    zoomLink: "",
+    zoomLink: "https://ethz.zoom.us/meeting/register/QFdZL_FcRUmOvTAMf9rYzg",
     abstract: `Pump–probe diffraction and scattering at X-ray free-electron lasers (XFELs) are well-established methods for studying ultrafast structural dynamics at high spatial resolution. In this talk, I will focus on how high repetition rates extend these capabilities by enabling serial measurements of large numbers of individual particles. I will describe how machine learning can be used to analyse the resulting diffraction patterns and infer structural variation within an ensemble, as well as changes in the distribution of structures during a dynamical process.
 
     Building on our proof-of-concept studies of the structural landscape of gold nanoparticles [1,2], I will discuss three applications of this approach: large polaron formation in CsPbBr₃ quantum dots [3], dehydration dynamics of MS2 bacteriophage capsids using deep learning [4], and plasmon-induced structural deformations of gold nanoparticles. I will also discuss how the rapidly evolving capabilities of AI tools are changing how we develop and test analysis methods for these experiments. Finally, I will consider the possibility of using these methods to study ultrafast dynamics in systems where precise optical triggering is not possible.
@@ -73,6 +73,13 @@ export default function Seminar() {
       speaker: "Kartik Ayyer",
       affiliation: "Group Leader - Max Plank Institute for the Structure and Dynamics of Matter, Hamburg DE",
       topic: "Serial diffractive imaging at high-repetition-rate XFELs",
+      status: "upcoming",
+    },
+    {
+      date: "December 9, 2026",
+      speaker: "Simon Wall",
+      affiliation: "Professor - Aarhus University, Department of Physcis",
+      topic: "TBA",
       status: "upcoming",
     },
     // {
