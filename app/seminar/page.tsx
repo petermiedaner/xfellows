@@ -11,7 +11,7 @@ export default function Seminar() {
   const upcomingSeminar = {
     title: "Serial diffractive imaging at high-repetition-rate XFELs",
     speaker: "Kartik Ayyer",
-    affiliation: "Group Leader - Max Plank Institute",
+    affiliation: "Group Leader - Max Planck Institute (Structure and Dynamics of Matter, Hamburg DE)",
     startsAt: "2026-12-02T16:00:00Z",
     durationMinutes: 60,
     zoomLink: "https://ethz.zoom.us/meeting/register/QFdZL_FcRUmOvTAMf9rYzg",
