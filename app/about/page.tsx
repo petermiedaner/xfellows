@@ -21,7 +21,7 @@ export default function About() {
     {
       name: "Nadia Berndt",
       position: "Ph.D. candidate, Massachusetts Institute of Technology",
-      image: "",
+      image: "/nadia.jpg",
       email: "nadiaber@mit.edu",
       scholar: "https://scholar.google.com/citations?user=487INbkAAAAJ&hl=en",
     },
