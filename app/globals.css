@@ -119,6 +119,35 @@ a {
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+.seminar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.seminar-actions a {
+  padding: 10px 24px;
+  border: 1px solid #ea5078;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.seminar-register-link {
+  background-color: #ea5078;
+  color: white;
+}
+
+.seminar-calendar-link {
+  color: #a72b4c;
+}
+
+.seminar-calendar-link:hover {
+  background-color: #fff1f5;
+}
+
 .seminar-table-container,
 .page-table-container {
   width: 100%;

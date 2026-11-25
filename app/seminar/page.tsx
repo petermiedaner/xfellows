@@ -1,11 +1,19 @@
+function calendarDate(date: Date) {
+  return date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
+}
+
+function calendarText(value: string) {
+  return value.replace(/\\/g, "\\\\").replace(/\r\n|\r|\n/g, "\\n").replace(/[;,]/g, "\\$&");
+}
+
 export default function Seminar() {
   // Upcoming seminar data
   const upcomingSeminar = {
     title: "Serial diffractive imaging at high-repetition-rate XFELs",
     speaker: "Kartik Ayyer",
     affiliation: "Group Leader - Max Plank Institute",
-    date: "December 2, 2026",
-    time: "8:00 AM Pacific / 11:00 AM Eastern / 5:00 PM Europe",
+    startsAt: "2026-12-02T16:00:00Z",
+    durationMinutes: 60,
     zoomLink: "https://ethz.zoom.us/meeting/register/QFdZL_FcRUmOvTAMf9rYzg",
     abstract: `Pump–probe diffraction and scattering at X-ray free-electron lasers (XFELs) are well-established methods for studying ultrafast structural dynamics at high spatial resolution. In this talk, I will focus on how high repetition rates extend these capabilities by enabling serial measurements of large numbers of individual particles. I will describe how machine learning can be used to analyse the resulting diffraction patterns and infer structural variation within an ensemble, as well as changes in the distribution of structures during a dynamical process.
 
@@ -16,6 +24,38 @@ export default function Seminar() {
     [3] Shen, et al, ACS Nano 19, 31, 28372-28382 (2025)
     [4] Mall, et al, Light Sci Appl 15, 280 (2026)`,
   };
+
+  const startsAt = new Date(upcomingSeminar.startsAt);
+  const endsAt = new Date(startsAt.getTime() + upcomingSeminar.durationMinutes * 60_000);
+  const date = new Intl.DateTimeFormat("en-US", {
+    dateStyle: "long",
+    timeZone: "Europe/Zurich",
+  }).format(startsAt);
+  const time = [
+    ["America/Los_Angeles", "Pacific"],
+    ["America/New_York", "Eastern"],
+    ["Europe/Zurich", "Central Europe"],
+  ].map(([timeZone, label]) => {
+    const localTime = new Intl.DateTimeFormat("en-US", { timeStyle: "short", timeZone });
+    return `${localTime.format(startsAt)} ${label}`;
+  }).join(" / ");
+
+  const calendar = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//XFELLOWs//Seminar Series//EN",
+    "BEGIN:VEVENT",
+    `UID:${calendarDate(startsAt)}@x-fellows.com`,
+    `DTSTAMP:${calendarDate(new Date())}`,
+    `DTSTART:${calendarDate(startsAt)}`,
+    `DTEND:${calendarDate(endsAt)}`,
+    `SUMMARY:${calendarText(upcomingSeminar.title)}`,
+    `DESCRIPTION:${calendarText(`XFELLOWs seminar with ${upcomingSeminar.speaker}.`)}`,
+    `URL:${upcomingSeminar.zoomLink}`,
+    "END:VEVENT",
+    "END:VCALENDAR",
+    "",
+  ].join("\r\n");
 
   // Seminar schedule data
   const seminars = [
@@ -69,7 +109,7 @@ export default function Seminar() {
       status: "past",
     },
     {
-      date: "December 2, 2026",
+      date,
       speaker: "Kartik Ayyer",
       affiliation: "Group Leader - Max Plank Institute for the Structure and Dynamics of Matter, Hamburg DE",
       topic: "Serial diffractive imaging at high-repetition-rate XFELs",
@@ -154,32 +194,30 @@ export default function Seminar() {
             <strong>{upcomingSeminar.speaker}</strong> — {upcomingSeminar.affiliation}
           </p>
           <p style={{ margin: 0 }}>
-            {upcomingSeminar.date}
+            {date}
           </p>
           <p style={{ margin: 0 }}>
-            {upcomingSeminar.time}
+            {time}
           </p>
         </div>
 
-        {/* Zoom Link */}
-        <a
-          href={upcomingSeminar.zoomLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{
-            display: "inline-block",
-            backgroundColor: "#ea5078",
-            color: "white",
-            padding: "10px 24px",
-            borderRadius: "6px",
-            textDecoration: "none",
-            fontWeight: "bold",
-            fontSize: "14px",
-            marginBottom: "20px",
-          }}
-        >
-          Register →
-        </a>
+        <div className="seminar-actions">
+          <a
+            className="seminar-register-link"
+            href={upcomingSeminar.zoomLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register →
+          </a>
+          <a
+            className="seminar-calendar-link"
+            href={`data:text/calendar;charset=utf-8,${encodeURIComponent(calendar)}`}
+            download="xfellows-seminar.ics"
+          >
+            Add to calendar
+          </a>
+        </div>
 
         {/* Abstract */}
         <div style={{
